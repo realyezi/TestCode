@@ -24,4 +24,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)AddConstraint:(id)sender {
+    
+    self.view1LeadingConstraint.constant += 40;
+    self.view2TrailingConstraint .constant+= 40;
+}
+
+- (IBAction)clickMinusConstraint:(id)sender {
+
+    self.view1LeadingConstraint.constant -= 40;
+    self.view2TrailingConstraint.constant -= 40;
+    
+}
 @end

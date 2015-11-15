@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *view1LeadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *view2TrailingConstraint;
 
 @end
 
