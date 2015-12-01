@@ -37,8 +37,8 @@
                                     <constraint firstAttribute="width" constant="100" id="hIY-6Z-lm9"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="43" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-fb-hU9">
-                                <rect key="frame" x="139" y="153" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="43" translatesAutoresizingMaskIntoConstraints="NO" id="ibL-fb-hU9">
+                                <rect key="frame" x="139" y="128" width="42" height="21"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -49,20 +49,42 @@
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo8-FO-y39">
+                                <rect key="frame" x="83" y="156" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="AddConstraint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFa-KJ-hoc"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNt-6F-drt">
-                                <rect key="frame" x="185" y="279" width="46" height="30"/>
+                                <rect key="frame" x="189" y="156" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Minus"/>
                                 <connections>
                                     <action selector="clickMinusConstraint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YP-9t-qol"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo8-FO-y39">
-                                <rect key="frame" x="79" y="279" width="46" height="30"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jjC-Qh-3fv">
+                                <rect key="frame" x="189" y="186" width="51" height="31"/>
                                 <animations/>
-                                <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="AddConstraint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFa-KJ-hoc"/>
+                                    <action selector="switchRotateMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="VF2-jm-fW2"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自动旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnt-dc-qJt">
+                                <rect key="frame" x="108" y="191" width="80" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MT-1u-Adc">
+                                <rect key="frame" x="108" y="225" width="118" height="30"/>
+                                <animations/>
+                                <state key="normal" title="手动顺时针旋转"/>
+                                <connections>
+                                    <action selector="clickRotateByTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awX-3F-B7t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,12 +103,15 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="rotateButton" destination="8MT-1u-Adc" id="F6I-Ky-ETQ"/>
+                        <outlet property="rotateSwitch" destination="jjC-Qh-3fv" id="rlo-ty-eat"/>
                         <outlet property="view1LeadingConstraint" destination="NSn-MW-gHo" id="lVO-fO-oV4"/>
                         <outlet property="view2TrailingConstraint" destination="Szm-Mu-RXz" id="O0R-Qp-OMu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="306"/>
         </scene>
     </scenes>
 </document>
