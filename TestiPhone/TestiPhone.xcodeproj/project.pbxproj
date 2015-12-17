@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496A72ED1C0DD3F200E7D7C5 /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 496A72EC1C0DD3F200E7D7C5 /* TestBundle.bundle */; };
 		7AA336F41BF761CF002E79A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA336F31BF761CF002E79A4 /* main.m */; };
 		7AA336F71BF761D0002E79A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA336F61BF761D0002E79A4 /* AppDelegate.m */; };
 		7AA336FA1BF761D0002E79A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA336F91BF761D0002E79A4 /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		496A72EC1C0DD3F200E7D7C5 /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
 		7AA336EF1BF761CF002E79A4 /* TestiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA336F31BF761CF002E79A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7AA336F51BF761D0002E79A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		7AA336E61BF761CF002E79A4 = {
 			isa = PBXGroup;
 			children = (
+				496A72EC1C0DD3F200E7D7C5 /* TestBundle.bundle */,
 				7AA336F11BF761CF002E79A4 /* TestiPhone */,
 				7AA3370B1BF761D0002E79A4 /* TestiPhoneTests */,
 				7AA337161BF761D0002E79A4 /* TestiPhoneUITests */,
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA337021BF761D0002E79A4 /* LaunchScreen.storyboard in Resources */,
+				496A72ED1C0DD3F200E7D7C5 /* TestBundle.bundle in Resources */,
 				7AA336FF1BF761D0002E79A4 /* Assets.xcassets in Resources */,
 				7AD706231BF82BBE006FB0CD /* TestViewController.xib in Resources */,
 				7AA336FD1BF761D0002E79A4 /* Main.storyboard in Resources */,
@@ -422,7 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: XIA LI (472G4S4M4R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestiPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -437,7 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: XIA LI (472G4S4M4R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestiPhone/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
